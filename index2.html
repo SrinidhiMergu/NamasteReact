@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
     <title>Namaste React</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="header">Srinidhi is here!</div>
+    <h1>h1 above root</h1>
+    <div id="root"><h1>Srinidhi is here!</h1></div>
+    <h2>h2 below root</h2>
 
     <script 
       crossorigin 
@@ -16,11 +20,13 @@
       crossorigin 
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-
-    <script>
+    <!-- Example to create h1 tag using react -->
+    <!-- <script>
       const heading = React.createElement("h1", {}, "Hello World from React!");
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(heading);
-    </script>
+    </script> -->
+
+    <script src="./App.js"></script>
   </body>
 </html>
