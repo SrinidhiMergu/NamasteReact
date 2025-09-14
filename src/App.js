@@ -11,8 +11,8 @@ import Error from "./components/Error.js";
 const AppLayout = () => {
   return (
     <div className="app">
-      <Header></Header>
-      <Body />
+      <Header />
+      <Outlet />
     </div>
   );
 };
@@ -22,6 +22,20 @@ const appRouter = createBrowserRouter([
     path: "/",
     element: <AppLayout />,
     errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
   },
   {
     path: "/about",
